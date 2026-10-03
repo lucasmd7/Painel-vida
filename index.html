@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>Painel</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Painel">
+<meta name="theme-color" content="#000000">
+<link rel="apple-touch-icon" href="https://hhecvznorlkcjzuavnkp.supabase.co/storage/v1/object/public/app/icon-180.png">
+<style>html,body{margin:0;background:#000;height:100%}</style>
+</head><body>
+<script>
+// Carrega a versão mais nova do painel. Este arquivo nunca precisa mudar.
+fetch('https://hhecvznorlkcjzuavnkp.supabase.co/storage/v1/object/public/app/painel.html?t='+Date.now(),{cache:'no-store'})
+  .then(r=>r.text()).then(h=>{document.open();document.write(h);document.close();})
+  .catch(()=>{document.body.innerHTML='<p style="color:#fff;font-family:system-ui;padding:40px;text-align:center">Sem internet. Tenta de novo.</p>';});
+</script>
+</body></html>
